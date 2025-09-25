@@ -1,0 +1,135 @@
+
+*{
+    margin: 0%;
+}
+header {
+    background-color: deeppink;
+    color:aliceblue;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+header p {
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+main {
+    display: grid;
+    grid-template-columns: 2rf 1rf;
+    gap:2rem;
+    padding: 2rem;
+}
+section {
+    width: 65w;
+    gap: 1rem;
+}
+section h2 {
+    color: darkorchid;
+    margin-bottom: 1rem;
+}
+
+article {
+    justify-content: center;
+    align-items: center;
+    background-color: deeppink;
+    color: beige;
+}
+article img{
+    width: 180px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+.article-text h3 {
+    margin-top: 0;
+    color: blueviolet;
+}
+.article-text p {
+    margin: 0,5rem 0 1rem 0;
+}
+.article-text a {
+    display: inline-block;
+    background-color: beige;
+    color: fuchsia;
+    padding: o,5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+article img {
+    border-radius: 10px;
+    margin: 0,5rem 0;
+    width: 25vw;
+    height: 23vh;
+    float: left;
+}
+aside {
+    background-color: hotpink;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+}
+aside h2 {
+    color: beige;
+}
+aside img {
+    width: 120px;
+    border-radius: 50px;
+    margin-top: 1rem;
+}
+
+footer {
+    background-color: deeppink;
+    height: 10vh;
+    color: beige;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Media query para pantallas más pequeñas (móviles) */
+@media (max-width: 768px) {
+    header {
+        padding: 1rem 0.5rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        padding: 1rem;
+    }
+
+    section {
+        width: 100%; /* Sección ocupa todo el ancho */
+    }
+
+    article img {
+        width: 40vw; /* Ajusta el ancho de la imagen */
+        height: auto; /* Ajusta la altura automáticamente */
+        float: none; /* Elimina el float en pantallas pequeñas */
+        margin: 0 auto 1rem; /* Centra la imagen y añade margen inferior */
+        display: block; /* Convierte la imagen en un elemento de bloque para centrarla */
+    }
+
+    aside {
+        padding: 1rem;
+    }
+
+    aside img {
+        width: 100px;
+    }
+
+    footer {
+        height: auto; /* Ajusta la altura automáticamente */
+        padding: 0.5rem;
+        margin-top: 1rem;
+    }
+}
